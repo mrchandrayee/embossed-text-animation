@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080f1b">
+  <title>Embossed Text Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <h1>Embossed Text Animation</h1>
+      <span class="live">● LIVE PREVIEW</span>
+    </header>
+
+    <section class="demo-card" aria-label="Text animation preview">
+      <div class="demo-meta"><span id="demoName">01 / EMBOSS</span><span>CSS TEXT EFFECTS</span></div>
+      <div class="demo-stage" id="demoStage">
+        <div class="demo-text anim-1" id="demoText">EMBOSS</div>
+      </div>
+    </section>
+
+    <section class="code-card">
+      <div class="code-title"><span id="codeTitle">ANIMATION 01 — EMBOSS</span><button id="copyCode" type="button">Copy CSS</button></div>
+      <pre><code id="codeContent"></code></pre>
+    </section>
+
+    <nav class="controls" aria-label="Choose text animation">
+      <button class="arrow" id="previous" type="button" aria-label="Previous animation">←</button>
+      <button class="number active" data-index="0" type="button">01</button>
+      <button class="number" data-index="1" type="button">02</button>
+      <button class="number" data-index="2" type="button">03</button>
+      <button class="number" data-index="3" type="button">04</button>
+      <button class="number" data-index="4" type="button">05</button>
+      <button class="arrow" id="next" type="button" aria-label="Next animation">→</button>
+    </nav>
+    <p class="hint">Choose a number or use the arrow controls to explore each effect.</p>
+    <div class="toast" id="toast" role="status"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
